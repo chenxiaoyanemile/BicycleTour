@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="单车行首页"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:background="#BBDE5B"
+        android:id="@+id/tv_home_page"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:id="@+id/btn_back"
+        android:textColor="#ffffff"
+        android:background="#BBDE5B"
+        android:textSize="30sp"
+        android:layout_toStartOf="@+id/tv_home_page"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/tv_home_page"
+        android:layout_alignBottom="@+id/tv_home_page"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/bt_login"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:background="#BBDE5B"
+        android:layout_toEndOf="@+id/tv_home_page"
+        android:layout_alignBottom="@+id/tv_home_page"
+        android:layout_toRightOf="@+id/tv_home_page"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv_search"
+        android:layout_below="@+id/bt_login"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sv_search"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:background="#ff99cc00"
+                android:src="@drawable/rent_bg"
+                android:layout_weight="0.3"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="租自行车"
+                android:id="@+id/btn_rent"
+                android:textColor="#ffffffff"
+                android:background="#ff99cc00"
+                android:textSize="39sp"
+                android:layout_weight="0.7"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@drawable/buy_bg"
+                android:layout_weight="0.3"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="买自行车"
+                android:id="@+id/btn_buy"
+                android:textColor="#ffffffff"
+                android:background="#BBDE5B"
+                android:textSize="39sp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView4"
+                android:src="@drawable/sell_bg"
+                android:layout_weight="0.3"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卖自行车"
+                android:id="@+id/btn_sell"
+                android:textColor="#ffffffff"
+                android:background="#ff99cc00"
+                android:textSize="39sp"
+                android:gravity="center_vertical"
+                android:layout_weight="0.7"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView5"
+                android:src="@drawable/my_bg"
+                android:layout_weight="0.3"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系大饼"
+                android:id="@+id/btn_dabing"
+                android:textColor="#ffffffff"
+                android:background="#BBDE5B"
+                android:textSize="39sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

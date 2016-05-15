@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.lenovo.bicycle.view.BuyActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新款"
+        android:id="@+id/btn_newbike"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:background="#ff99cc00"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/buy_bg"
+        android:layout_gravity="center"
+        android:layout_alignBottom="@+id/btn_newbike"
+        android:layout_centerHorizontal="true"
+        android:background="#ff99cc00"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="二手"
+        android:id="@+id/btn_oldbike"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_above="@+id/searchView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ff99cc00"
+        android:layout_toRightOf="@+id/imageView"/>
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        android:background="#ffffffff"
+        android:layout_below="@+id/imageView"
+        android:layout_toLeftOf="@+id/searchView"
+        android:layout_toStartOf="@+id/searchView"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/d_bg"
+        android:layout_below="@+id/searchView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="永久牌山地自行车，9成新，60元"
+        android:id="@+id/btn_buy1"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_alignRight="@+id/btn_oldbike"
+        android:layout_alignEnd="@+id/btn_oldbike"
+        android:layout_alignBottom="@+id/imageView2"
+        android:background="#ff99cc00"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/s_bg"
+        android:layout_toStartOf="@+id/btn_buy1"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btn_buy1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="凤凰牌公路自行车，8成新，120元"
+        android:id="@+id/btn_buy2"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/btn_buy1"
+        android:layout_alignStart="@+id/btn_buy1"
+        android:layout_alignBottom="@+id/imageView3"
+        android:background="#ff99cc00"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/d_bg"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btn_buy2"
+        android:layout_toStartOf="@+id/btn_buy2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="菲特自行车，十成新，300元"
+        android:id="@+id/btn_buy3"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/btn_buy2"
+        android:layout_alignStart="@+id/btn_buy2"
+        android:layout_alignBottom="@+id/imageView4"
+        android:background="#ff99cc00"/>
+
+</RelativeLayout>

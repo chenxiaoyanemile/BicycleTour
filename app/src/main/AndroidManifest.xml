@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo.bicycle" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_running"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.lenovo.bicycle.main.MyActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.lenovo.bicycle.view.loginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.lenovo.bicycle.view.NewBicycle"
+            android:label="@string/title_activity_new_bicycle" >
+        </activity>
+        <activity
+            android:name="com.example.lenovo.bicycle.view.RentActivity"
+            android:label="@string/title_activity_rent" >
+        </activity>
+        <activity
+            android:name="com.example.lenovo.bicycle.view.BuyActivity"
+            android:label="@string/title_activity_buy" >
+        </activity>
+        <activity
+            android:name="com.example.lenovo.bicycle.view.SellActivity"
+            android:label="@string/title_activity_sell" >
+        </activity>
+        <activity
+            android:name="com.example.lenovo.bicycle.view.ManServiceActivity"
+            android:label="@string/title_activity_man_service" >
+        </activity>
+        <activity
+            android:name="com.example.lenovo.bicycle.model.RentBicycleActivity"
+            android:label="@string/title_activity_rent_bicycle" >
+        </activity>
+        <activity
+            android:name="com.example.lenovo.bicycle.model.RentBicycleTwoActivity"
+            android:label="@string/title_activity_rent_bicycle_two" >
+        </activity>
+        <activity
+            android:name="com.example.lenovo.bicycle.model.RentBikeKidActivity"
+            android:label="@string/title_activity_rentbikekid" >
+        </activity>
+        <activity
+            android:name="com.example.lenovo.bicycle.model.RentBikeMountainActivity"
+            android:label="@string/title_activity_rent_bike_mountain" >
+        </activity>
+        <activity
+            android:name="com.example.lenovo.bicycle.receiver.MessageActivity"
+            android:label="@string/title_activity_message" >
+        </activity>
+    </application>
+
+</manifest>
